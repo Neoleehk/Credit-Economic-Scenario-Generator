@@ -4,6 +4,7 @@
 No vibe coding, all things elegantly and concisely coded based on classic financial mathematics, ensuring code interpretability and execution efficiency.
 
 **Building Block 1: Credit Yield Martingale Tester**
+
 **Objective**: After thousands of timesteps of Monte Carlo simulation, you may want to check whether the credit yield simulation passes the martingale test to ensure that the model generates appropriate scenarios for risk-neutral pricing. 
 
 **Theory**: Under the risk-neutral measure, deflated asset prices are always martingale.
