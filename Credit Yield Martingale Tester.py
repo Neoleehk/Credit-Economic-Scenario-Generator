@@ -71,7 +71,7 @@ def trans_mat(curr : str, SubRisks : pd.DataFrame, sim: int = 0) -> np.array:
     Matrix = np.zeros((Max_State, Max_State))
     for col in range(Max_State - 1):
         for row in range(Max_State):
-            Matrix[i, j] = SubRisks.loc[sim, f'{curr}_Corp_Transition_Prob_{col+1}_{row+1}_1' if i < 7 else f'{curr}_Corp_Default_Prob_{col+1}_1']
+            Matrix[row, col] = SubRisks.loc[sim, f'{curr}_Corp_Transition_Prob_{col+1}_{row+1}_1' if i < 7 else f'{curr}_Corp_Default_Prob_{col+1}_1']
     return Matrix
 
 def real_mat(init_mat : np.array, curr_mat : np.array) -> np.array:
