@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('THE CLIENT\'S MONTE CARLO SIMULATION OUTPUT FILE.csv')
 question_1 = bool(input('Wanna know what outputs are accessible? Please answer \'True\' if you hope to, otherwise type in \'False\'.'))
 
-if question_1:
+if question_1 == True:
     outputs = df.columns.to_list()
     print(outputs)
 else:
